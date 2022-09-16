@@ -9,57 +9,57 @@ public class User{
      Console.WriteLine("Input A สำหรับดูข้อมูลของมหาวิทยาลัย");
      Console.WriteLine("Input B แสดงข้อมูลตัวแทนมหาวิทยาลัย");
      Console.WriteLine("Input C แสดงข้อมูลห้องสมุดมหาวิทยาลัยที่ใช้ไฟน้อยที่สุด");
-     Console.WriteLine("Input anykeys เพื่อออกจากโปรแกรม");
+     Console.WriteLine("Input E เพื่อออกจากโปรแกรม");
      Console.WriteLine("");
      var input = Console.ReadLine();
      if (input=="A"){
-        Console.WriteLine(cu.name());
-        Console.Write(cu.libraly());
-        Console.Write(cu.address());
-        Console.Write(cu.phone());
+        Console.Write(cu.name());
+        Console.Write(" "+cu.libraly());
+        Console.Write(" "+cu.address());
+        Console.WriteLine(" "+cu.phone());
 
-        Console.WriteLine(mu.name());
-        Console.Write(mu.libraly());
-        Console.Write(mu.address());
-        Console.Write(mu.phone());
+        Console.Write(mu.name());
+        Console.Write(" "+mu.libraly());
+        Console.Write(" "+mu.address());
+        Console.WriteLine(" "+mu.phone());
 
-        Console.WriteLine(kmitl.name());
-        Console.Write(kmitl.libraly());
-        Console.Write(kmitl.address());
-        Console.Write(kmitl.phone());
+        Console.Write(kmitl.name());
+        Console.Write(" "+kmitl.libraly());
+        Console.Write(" "+kmitl.address());
+        Console.WriteLine(" "+kmitl.phone());
 
-        Console.WriteLine(kku.name());
+        Console.Write(kku.name());
         Console.Write(kku.libraly());
         Console.Write(kku.address());
-        Console.Write(kku.phone());
+        Console.WriteLine(kku.phone());
 
-        Console.WriteLine(kmutt.name());
-        Console.Write(kmutt.libraly());
-        Console.Write(kmutt.address());
-        Console.Write(kmutt.phone());
+        Console.Write(kmutt.name());
+        Console.Write(" "+kmutt.libraly());
+        Console.Write(" "+kmutt.address());
+        Console.WriteLine(" "+kmutt.phone());
 
 
      }
 
      if (input=="B"){
-        Console.WriteLine(cu.name());
-        Console.Write(cu.agent());
+        Console.Write(cu.name());
+        Console.WriteLine(" "+cu.agent());
 
 
-        Console.WriteLine(mu.name());
-        Console.Write(mu.agent());
+        Console.Write(mu.name());
+        Console.WriteLine(" "+mu.agent());
 
 
-        Console.WriteLine(kmitl.name());
-        Console.Write(kmitl.agent());
+        Console.Write(kmitl.name());
+        Console.WriteLine(" "+kmitl.agent());
 
 
-        Console.WriteLine(kku.name());
-        Console.Write(kku.agent());
+        Console.Write(kku.name());
+        Console.WriteLine(" "+kku.agent());
 
 
-        Console.WriteLine(kmutt.name());
-        Console.Write(kmutt.agent());
+        Console.Write(kmutt.name());
+        Console.WriteLine(" "+kmutt.agent());
 
 
 
@@ -67,49 +67,47 @@ public class User{
 
      if (input=="C"){
         if (sort.bill()==cu.bill()){
-        Console.WriteLine(cu.name());
-        Console.Write(cu.libraly());
+        Console.Write(cu.name());
+        Console.Write(" "+cu.libraly());
         Console.Write(" ค่า FT: "+cu.ft());
-        Console.Write(" ค่าไฟ: "+cu.bill());
+        Console.WriteLine(" ค่าไฟ: "+cu.bill());
          }
 
         if (sort.bill()==mu.bill()){
-        Console.WriteLine(mu.name());
-        Console.Write(mu.libraly());
+        Console.Write(mu.name());
+        Console.Write(" "+mu.libraly());
         Console.Write(" ค่า FT: "+mu.ft());
-        Console.Write(" ค่าไฟ: "+mu.bill());
+        Console.WriteLine(" ค่าไฟ: "+mu.bill());
          }
 
         if (sort.bill()==kmitl.bill()){
-        Console.WriteLine(kmitl.name());
-        Console.Write(kmitl.libraly());
+        Console.Write(kmitl.name());
+        Console.Write(" "+kmitl.libraly());
         Console.Write(" ค่า FT: "+kmitl.ft());
-        Console.Write(" ค่าไฟ: "+kmitl.bill());
+        Console.WriteLine(" ค่าไฟ: "+kmitl.bill());
          }
 
         if (sort.bill()==kku.bill()){
-        Console.WriteLine(kku.name());
-        Console.Write(kku.libraly());
+        Console.Write(kku.name());
+        Console.Write(" "+kku.libraly());
         Console.Write(" ค่า FT: "+kku.ft());
-        Console.Write(" ค่าไฟ: "+kku.bill());
+        Console.WriteLine(" ค่าไฟ: "+kku.bill());
          }
 
         if (sort.bill()==kmutt.bill()){
-        Console.WriteLine(kmutt.name());
-        Console.Write(kmutt.libraly());
+        Console.Write(kmutt.name());
+        Console.Write(" "+kmutt.libraly());
         Console.Write(" ค่า FT: "+kmutt.ft());
-        Console.Write(" ค่าไฟ: "+kmutt.bill());
+        Console.WriteLine(" ค่าไฟ: "+kmutt.bill());
          }
 
 
      }
 
-     else {
+     if (input=="E"){
         break;
      }
-
     }
-    Console.ReadLine();
  }
 
 public  class sort{

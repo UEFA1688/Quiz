@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/uefa168/Desktop/quiz/quiz.csproj",
+      "projectUniqueName": "/home/uefa168/Desktop/Quiz/quiz/quiz.csproj",
       "projectName": "quiz",
-      "projectPath": "/home/uefa168/Desktop/quiz/quiz.csproj",
+      "projectPath": "/home/uefa168/Desktop/Quiz/quiz/quiz.csproj",
       "packagesPath": "/home/uefa168/.nuget/packages/",
-      "outputPath": "/home/uefa168/Desktop/quiz/obj/",
+      "outputPath": "/home/uefa168/Desktop/Quiz/quiz/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/uefa168/.nuget/NuGet/NuGet.Config"
